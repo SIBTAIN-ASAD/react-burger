@@ -1,9 +1,11 @@
-// Burger.jsx
-
 import React from 'react';
 import './Burger.css';
+import Bacon from './Bason';
+import Cheese from './Cheese';
+import Lettuce from './Lettuce';
+import Meat from './Meat';
 
-const Burger = ({ type }) => {
+const Burger = () => {
   return (
     <center>
       <div className="bread-top">
@@ -16,10 +18,12 @@ const Burger = ({ type }) => {
         <div className="bean bean9"></div>
       </div>
 
-      <div className="ingredient lettuce"></div>
-      <div className="ingredient bacon"></div>
-      <div className="ingredient cheese"></div>
-      <div className="ingredient meat"></div>
+      {/* The ingredients are added here */}
+      <Bacon />
+      <Cheese />
+      <Lettuce />
+      <Meat />
+            
 
       <div className="bread-bottom">
         {/* Beans on the bottom bread */}

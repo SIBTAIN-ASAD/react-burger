@@ -4,17 +4,27 @@
     width: 380px;
     height: 30px;
     background-color: #8B4513; /* Default bread color */
-    margin: 2px 0;
+    margin: 2px;
   }
   
   /* Specific styling for each ingredient */
-  .lettuce {
+  .sublettuce {
     background: linear-gradient(#7CFC00, #228B22); /* Green gradient for lettuce */
     border-radius: 20px;
+    width: 180px;
+    margin-left: 1px;
+    margin-right: 1px;
   }
+
+  .lettuce {    
+    display: flex;
+    justify-content: center;
+  }
+
+  
   
   .bacon {
-    background: linear-gradient(#FFD700, #FFA500); /* Gradient for bacon */
+    background: linear-gradient(#a55e0c, #e79b0c); /* Gradient for bacon */
     border-radius: 20px;
   }
   
@@ -25,17 +35,18 @@
   
   .meat {
     background: linear-gradient(#8B4513, #5E2D0E); /* Gradient for meat */
-    border-radius: 20px;
+    border-radius: 10px;
+    height: 40px;
   }
   
   /* Styling for top and bottom bread */
   .bread-top {
     margin-top: 10vh;
     width: 400px;
-    height: 60px;
+    height: 70px;
     background: linear-gradient(#FFD700, #FFA500); /* Gradient for bread top */
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
     position: relative;
   }
   
