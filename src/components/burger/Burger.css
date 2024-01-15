@@ -1,0 +1,138 @@
+/* BurgerIngredient.css */
+
+.ingredient {
+    width: 380px;
+    height: 30px;
+    background-color: #8B4513; /* Default bread color */
+    margin: 2px 0;
+  }
+  
+  /* Specific styling for each ingredient */
+  .lettuce {
+    background: linear-gradient(#7CFC00, #228B22); /* Green gradient for lettuce */
+    border-radius: 20px;
+  }
+  
+  .bacon {
+    background: linear-gradient(#FFD700, #FFA500); /* Gradient for bacon */
+    border-radius: 20px;
+  }
+  
+  .cheese {
+    background: linear-gradient(#FFD700, #FFA500); /* Gradient for cheese */
+    border-radius: 20px;
+  }
+  
+  .meat {
+    background: linear-gradient(#8B4513, #5E2D0E); /* Gradient for meat */
+    border-radius: 20px;
+  }
+  
+  /* Styling for top and bottom bread */
+  .bread-top {
+    margin-top: 10vh;
+    width: 400px;
+    height: 60px;
+    background: linear-gradient(#FFD700, #FFA500); /* Gradient for bread top */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+  }
+  
+  .bread-bottom {
+    width: 400px;
+    height: 60px;
+    background: linear-gradient(#c0a50c, #dcb158); /* Gradient for bread bottom */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+  }
+  
+  /* Add beans in the bread */
+  .bean {
+    width: 10px;
+    height: 10px;
+    background-color: #3E2723; /* Brown color for beans */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+
+  /* Styling for beans */
+.bean {
+    width: 8px;
+    height: 4px;
+    background-color: #3E2723; /* Brown color for beans */
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(30deg);
+  }
+  
+  .bean1 {
+    top: 10%;
+    left: 30%;
+  }
+  
+  .bean2 {
+    top: 20%;
+    left: 70%;
+  }
+  
+  .bean3 {
+    top: 30%;
+    left: 50%;
+  }
+  
+  .bean4 {
+    bottom: 10%;
+    left: 20%;
+  }
+  
+  .bean5 {
+    bottom: 20%;
+    left: 60%;
+  }
+  
+  .bean6 {
+    bottom: 30%;
+    left: 40%;
+  }
+  
+  .bean7 {
+    top: 15%;
+    left: 40%;
+    background-color: #3E2723; /* White color for bean */
+  }
+  
+  .bean8 {
+    top: 25%;
+    left: 60%;
+    background-color: #3E2723; /* Brown color for bean */
+  }
+  
+  .bean9 {
+    top: 35%;
+    left: 30%;
+    background-color: #3E2723; /* White color for bean */
+  }
+  
+  .bean10 {
+    bottom: 15%;
+    left: 50%;
+    background-color: #3E2723; /* Brown color for bean */
+  }
+  
+  .bean11 {
+    bottom: 25%;
+    left: 40%;
+    background-color: #3E2723; /* White color for bean */
+  }
+  
+  .bean12 {
+    bottom: 35%;
+    left: 70%;
+    background-color: #3E2723; /* Brown color for bean */
+  }
