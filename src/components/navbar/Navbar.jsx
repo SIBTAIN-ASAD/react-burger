@@ -8,10 +8,8 @@ const Navbar = () => {
     return (
         
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a class="active" href="#home">React Burger</a>
+            <a href="#news">A place to learn and eat</a>
             <img src={image} alt="logo" className='logo' />
         </div>
     );
