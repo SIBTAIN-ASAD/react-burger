@@ -36,6 +36,9 @@
   .total-display {
     margin: 10px 0;
     font-size: 18px;
+    font-weight: bold;
+    color: #8f0a0a; /* White text color */
+    margin-left: 20px;
   }
   
   .remove-gradient-button {
@@ -50,13 +53,14 @@
   
   .order-button {
     width: 150px;
-    margin: 10px 0;
+    margin: 10px 5px;
     padding: 10px;
     background-color: #8B4513; /* Brown button color */
     color: #fff; /* White text color */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
   }
   
   .ingredient-name {

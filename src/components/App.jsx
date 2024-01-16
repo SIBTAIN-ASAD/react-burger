@@ -7,7 +7,11 @@ import Navbar from './navbar/Navbar';
 import './App.css';
 
 const App = () => {
+  // State for each gradient
   const [burger, setBurger] = useState([0, 0, 0, 0]);
+
+  // Max gradeint count
+  const maxGradients = 10;
 
   // Prices for each gradient
   const prices = [0.5, 0.7, 0.4, 1.3];
@@ -18,6 +22,11 @@ const App = () => {
   const handleAdd = (index) => {
     const newBurger = [...burger];
     newBurger[index]++;
+
+    if (newBurger.reduce((acc, count) => acc + count, 0) > maxGradients) {
+      alert('You have reached the maximum number of gradients!');
+      return;
+    }
     setBurger(newBurger);
   };
 
@@ -34,6 +43,10 @@ const App = () => {
     alert('Your order has been placed!');
   };
 
+  const handleRemoveAll = () => {
+    setBurger([0, 0, 0, 0]);
+  }
+
   return (
     <div>
       <Navbar />
@@ -43,6 +56,7 @@ const App = () => {
         prices={prices}
         handleAdd={handleAdd}
         handleRemove={handleRemove}
+        handleRemoveAll={handleRemoveAll}
         handleOrder={handleOrder}
         gradients={gradients}
       />

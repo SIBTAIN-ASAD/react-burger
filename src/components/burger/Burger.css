@@ -20,8 +20,6 @@
     display: flex;
     justify-content: center;
   }
-
-  
   
   .bacon {
     background: linear-gradient(#a55e0c, #e79b0c); /* Gradient for bacon */
@@ -41,7 +39,7 @@
   
   /* Styling for top and bottom bread */
   .bread-top {
-    margin-top: 10vh;
+    margin-top: 2vh;
     width: 400px;
     height: 70px;
     background: linear-gradient(#FFD700, #FFA500); /* Gradient for bread top */
@@ -115,7 +113,7 @@
   .bean7 {
     top: 15%;
     left: 40%;
-    background-color: #3E2723; /* White color for bean */
+    background-color: #3E2723; /* Brown color for bean */
   }
   
   .bean8 {
@@ -127,7 +125,7 @@
   .bean9 {
     top: 35%;
     left: 30%;
-    background-color: #3E2723; /* White color for bean */
+    background-color: #3E2723; /* Brown color for bean */
   }
   
   .bean10 {
@@ -139,7 +137,7 @@
   .bean11 {
     bottom: 25%;
     left: 40%;
-    background-color: #3E2723; /* White color for bean */
+    background-color: #3E2723; /* Brown color for bean */
   }
   
   .bean12 {
@@ -147,6 +145,26 @@
     left: 70%;
     background-color: #3E2723; /* Brown color for bean */
   }
+    
+  .burger-scroll-container {
+    max-height: 430px;
+    overflow-y: auto;
+  }
 
+  .burger-container {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-  
+  .empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 40px;
+    padding-top: 15px;
+    font-weight: bold;
+    
+  }
