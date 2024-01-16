@@ -2,7 +2,7 @@
 
 Welcome to the React Burger App! This delightful application allows you to create and customize your own virtual burger by adding layers of delicious ingredients. No login or signup required—just enjoy the burger-building experience!
 
-![React Burger App](link-to-your-app-screenshot.png)
+![React Burger App](./src/assets/images/theme.png)
 
 ## Features
 

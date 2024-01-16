@@ -38,9 +38,11 @@ const App = () => {
     }
   };
 
-  const handleOrder = () => {
+  const handleOrder = (total) => {
     setBurger([0, 0, 0, 0]);
-    alert('Your order has been placed!');
+    alert(`
+    Your order has been placed!
+    Please pay $${total.toFixed(2)} at the counter!`);
   };
 
   const handleRemoveAll = () => {

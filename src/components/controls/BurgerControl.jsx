@@ -34,7 +34,7 @@ const BurgerControl = ({ burger, prices, handleAdd, handleRemove, handleRemoveAl
         <button className="order-button" onClick={handleRemoveAll}>
           Remove All
         </button>
-        <button className="order-button" onClick={handleOrder}>
+        <button className="order-button" onClick={(() => handleOrder(totalPrice))}>
           Place Order
         </button>
         </div>
