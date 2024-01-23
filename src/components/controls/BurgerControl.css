@@ -23,16 +23,6 @@
     cursor: pointer;
   }
   
-  .gradient-button {
-    width: 150px;
-    margin: 5px;
-    padding: 10px;
-    background: linear-gradient(#FFD700, #FFA500); /* Gradient button color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
   .total-display {
     margin: 10px 0;
     font-size: 18px;
@@ -41,15 +31,6 @@
     margin-left: 20px;
   }
   
-  .remove-gradient-button {
-    width: 200px;
-    margin: 10px 0;
-    padding: 10px;
-    background: linear-gradient(#c0a50c, #dcb158); /* Gradient button color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   
   .order-button {
     width: 150px;
@@ -69,4 +50,23 @@
     width: 100px;
     font-size: 18px;
     font-weight: bold;
+  }
+
+  /* add hover and click to buttons */
+  .button:hover {
+    background-color: #ecd23d; /* Yellow button color */
+  }
+  
+  .button:active {
+    background-color: #8B4513; /* Yellow button color */
+    color: #fff; /* White text color */
+  }
+
+  .order-button:hover {
+    background-color: #683613; /* Yellow button color */
+  }
+
+  .order-button:active {
+    background-color: #eccc3d; /* Yellow button color */
+    color: #0c0202; /* White text color */
   }
