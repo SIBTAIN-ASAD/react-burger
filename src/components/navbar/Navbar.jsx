@@ -7,8 +7,8 @@ import image from '../../assets/images/logo.png';
 const Navbar = () => {
     return (
         
-        <div class="topnav">
-            <a class="active" href="#home">React Burger</a>
+        <div className="topnav">
+            <a className="active" href="#home">React Burger</a>
             <a href="#news">A place to learn and eat</a>
             <img src={image} alt="logo" className='logo' />
         </div>

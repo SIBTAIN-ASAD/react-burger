@@ -18,22 +18,18 @@ const Main = () => {
   const gradients = ['lettuce', 'bacon', 'cheese', 'meat'];
 
   const handleAdd = (index) => {
-    const newBurger = [...burger];
-    newBurger[index]++;
-
-    if (newBurger.reduce((acc, count) => acc + count, 0) > maxGradients) {
-      alert('You have reached the maximum number of gradients!');
-      return;
-    }
-    setBurger(newBurger);
+    setBurger((current) => {
+      if (current.reduce((acc, count) => acc + count, 0) >= maxGradients) {
+        return current;
+      }
+      return current.map((count, position) => position === index ? count + 1 : count);
+    });
   };
 
   const handleRemove = (index) => {
-    if (burger[index] > 0) {
-      const newBurger = [...burger];
-      newBurger[index]--;
-      setBurger(newBurger);
-    }
+    setBurger((current) => current.map((count, position) =>
+      position === index ? Math.max(0, count - 1) : count
+    ));
   };
 
   const handleOrder = (total) => {
@@ -58,6 +54,7 @@ const Main = () => {
         handleRemoveAll={handleRemoveAll}
         handleOrder={handleOrder}
         gradients={gradients}
+        maxIngredients={maxGradients}
       />      
     </div>
   );

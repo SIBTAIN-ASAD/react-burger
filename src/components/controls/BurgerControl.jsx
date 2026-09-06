@@ -3,9 +3,10 @@
 import React from 'react';
 import './BurgerControl.css';
 
-const BurgerControl = ({ burger, prices, handleAdd, handleRemove, handleRemoveAll ,handleOrder, gradients }) => {
+const BurgerControl = ({ burger, prices, handleAdd, handleRemove, handleRemoveAll ,handleOrder, gradients, maxIngredients }) => {
   // Calculate the total price of the burger
   const totalPrice = burger.reduce((acc, count, index) => acc + count * prices[index], 3);
+  const atCapacity = burger.reduce((acc, count) => acc + count, 0) >= maxIngredients;
 
   return (
     <div className="burger-control">
@@ -15,10 +16,10 @@ const BurgerControl = ({ burger, prices, handleAdd, handleRemove, handleRemoveAl
           {burger.map((count, index) => (
             <div key={index} className="ingredient-button">
               <div className="ingredient-name">{gradients[index]}</div>
-              <button className="button" onClick={() => handleRemove(index)}>
+              <button className="button" aria-label={`Remove ${gradients[index]}`} disabled={count === 0} onClick={() => handleRemove(index)}>
                 Remove {count > 0 && `(${count})`}
               </button>
-              <button className="button" onClick={() => handleAdd(index)}>
+              <button className="button" aria-label={`Add ${gradients[index]}`} disabled={atCapacity} onClick={() => handleAdd(index)}>
                 Add
               </button>
             </div>
